@@ -106,14 +106,16 @@ h3 {
 
 .poke-thumb {
   font-size: 14px;
+  color: black;
   display: inline-block;
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
   border: 1px solid black;
   width: 100px;
-  transition: 0.5s transform;
+
   &:hover{
+    transition: 0.25s transform;
     transform: scale(1.3);
     background-color: lightcoral;
     color: white;
@@ -125,5 +127,27 @@ h3 {
     height: 80px;
     width: 80px;
     display: block;
+  }
+}
+
+.detail{
+  text-align: center;
+  position: relative;
+  padding: 100px 0;
+  img{
+    z-index: -1;
+    right: 25%;
+    top: 0;
+    width: 1000px;
+    position: absolute;
+    opacity: 0.4;
+    // transform: rotate(45deg);
+  }
+
+  p{
+    font-size: 80px;
+    font-weight: 700;
+    padding: 0;
+    margin: 5px;
   }
 }

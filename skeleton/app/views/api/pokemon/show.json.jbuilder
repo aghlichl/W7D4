@@ -1,14 +1,7 @@
 
-json.pokemon do 
-  json.extract! @poke, :id, :name, :attack, :defense, :moves, :poke_type, :item_ids
-  json.image_url asset_path(@poke.image_url)
-  # ids = []
-  # @poke.items.each do |item|
-  #   ids << item.id
-  # end
-  # json.item_ids ids.reverse
-  
-end
+
+json.extract! @poke, :id, :name, :attack, :defense, :moves, :poke_type, :item_ids
+json.image_url asset_path(@poke.image_url)
   
 json.items do 
   @poke.items.each do |item|

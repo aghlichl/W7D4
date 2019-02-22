@@ -13,3 +13,7 @@ export const selectPokeItems = (state, poke) => {
 export const selectPokemonItem = (state, id) => {
   return state.entities.items[id];
 };
+
+export const selectPokemonByID = (state, id) => {
+  return state.entities.pokemon[id];
+}

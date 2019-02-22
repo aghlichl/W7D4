@@ -1,7 +1,11 @@
 export const fetchAllPokemon = () => {
   return $.ajax({
-    url: 'http://localhost:3000/api/pokemon', 
-    method: 'GET',
+    url: '/api/pokemon'
   })
 }
 
+export const fetchPokemonById = (id) => {
+  return $.ajax({
+    url: `/api/pokemon/${id}`
+  });
+}
